@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Web Page with Form</title>
+</head>
+<body>
+    <header>
+        <h1>Enhanced Web Page with Form</h1>
+        <p>A demonstration of HTML5 features including lists, tables, media, and forms</p>
+    </header>
+
+    <!-- Lists Section -->
+    <section id="lists">
+        <h2>HTML Lists Demonstration</h2>
+        <div class="list-container">
+            <div class="list-box">
+                <h3>Unordered List (Favorite Foods)</h3>
+                <ul>
+                    <li>Pizza Margherita</li>
+                    <li>Sushi Platter</li>
+                    <li>Vegetable Stir Fry</li>
+                    <li>Chocolate Lava Cake</li>
+                    <li>Fresh Fruit Salad</li>
+                </ul>
+            </div>
+            <div class="list-box">
+                <h3>Ordered List (Top Programming Languages)</h3>
+                <ol>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C#</li>
+                    <li>PHP</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Table Section -->
+    <section id="tables">
+        <h2>HTML Table Demonstration</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Wireless Headphones</td>
+                    <td>Audio</td>
+                    <td>$129.99</td>
+                    <td>4.7/5</td>
+                </tr>
+                <tr>
+                    <td>Smart Watch</td>
+                    <td>Wearables</td>
+                    <td>$249.99</td>
+                    <td>4.5/5</td>
+                </tr>
+                <tr>
+                    <td>Bluetooth Speaker</td>
+                    <td>Audio</td>
+                    <td>$79.99</td>
+                    <td>4.3/5</td>
+                </tr>
+                <tr>
+                    <td>Fitness Tracker</td>
+                    <td>Wearables</td>
+                    <td>$59.99</td>
+                    <td>4.2/5</td>
+                </tr>
+                <tr>
+                    <td>Wireless Earbuds</td>
+                    <td>Audio</td>
+                    <td>$99.99</td>
+                    <td>4.6/5</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media">
+        <h2>HTML Media Demonstration</h2>
+        <div class="media-container">
+            <div class="media-item">
+                <h3>Image</h3>
+                <img src="https://via.placeholder.com/400x300" alt="Placeholder Image">
+                <p>A beautiful placeholder image</p>
+            </div>
+            <div class="media-item">
+                <h3>Audio</h3>
+                <audio controls>
+                    <source src="#" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>Sample audio playback</p>
+            </div>
+            <div class="media-item">
+                <h3>Video</h3>
+                <video controls>
+                    <source src="#" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+                <p>Sample video playback</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section id="form">
+        <h2>HTML5 Form with Validation</h2>
+        <div class="form-container">
+            <form id="enhanced-form" novalidate>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="fullname">Full Name <span class="required">*</span></label>
+                        <input type="text" id="fullname" name="fullname" required minlength="3" 
+                               placeholder="Enter your full name" autocomplete="name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required 
+                               placeholder="Enter your email address" autocomplete="email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" 
+                               placeholder="Enter your phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        <small>Format: 123-456-7890</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="birthdate">Date of Birth <span class="required">*</span></label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Account Details</legend>
+                    
+                    <div class="form-group">
+                        <label for="username">Username <span class="required">*</span></label>
+                        <input type="text" id="username" name="username" required minlength="4" 
+                               placeholder="Choose a username" autocomplete="username">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password <span class="required">*</span></label>
+                        <input type="password" id="password" name="password" required minlength="8" 
+                               placeholder="Create a strong password" autocomplete="new-password">
+                        <small>Must be at least 8 characters long</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="website">Website URL</label>
+                        <input type="url" id="website" name="website" 
+                               placeholder="Enter your website URL">
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Preferences</legend>
+                    
+                    <div class="form-group">
+                        <label>Favorite Color</label>
+                        <input type="color" id="color" name="color" value="#3498db">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="volume">Volume Level</label>
+                        <input type="range" id="volume" name="volume" min="0" max="100" value="50">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="">Select a country</option>
+                            <option value="usa">United States</option>
+                            <option value="canada">Canada</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="australia">Australia</option>
+                            <option value="germany">Germany</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Interests (Select up to 3)</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="interests" value="technology"> Technology</label>
+                            <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+                            <label><input type="checkbox" name="interests" value="music"> Music</label>
+                            <label><input type="checkbox" name="interests" value="travel"> Travel</label>
+                            <label><input type="checkbox" name="interests" value="reading"> Reading</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Subscription Plan</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="plan" value="basic" checked> Basic</label>
+                            <label><input type="radio" name="plan" value="pro"> Pro</label>
+                            <label><input type="radio" name="plan" value="enterprise"> Enterprise</label>
+                        </div>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="bio">Bio</label>
+                        <textarea id="bio" name="bio" rows="4" 
+                                  placeholder="Tell us about yourself"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="avatar">Profile Picture</label>
+                        <input type="file" id="avatar" name="avatar" accept="image/*">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reference">Reference ID (Readonly)</label>
+                        <input type="text" id="reference" name="reference" value="REF-12345" readonly>
+                    </div>
+                </fieldset>
+                
+                <button type="submit">Submit Form</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2023 Enhanced Web Page with Form | Designed with HTML5 and CSS3</p>
+    </footer>
+</body>
+</html>
